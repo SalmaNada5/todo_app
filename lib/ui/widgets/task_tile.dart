@@ -61,7 +61,7 @@ class TaskTile extends StatelessWidget {
                     _taskController.deletTask(task);
                     Get.back();
                   },
-                  color: Colors.red,
+                  color: Colors.redAccent,
                 ),
                 Divider(
                   thickness: 0.5,

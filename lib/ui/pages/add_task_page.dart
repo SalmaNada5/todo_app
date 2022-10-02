@@ -169,10 +169,14 @@ class _AddTaskPageState extends State<AddTaskPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        'Color',
-                        style: titleStyle,
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8),
+                        child: Text(
+                          'Color',
+                          style: titleStyle,
+                        ),
                       ),
                       Row(
                         children: List.generate(
@@ -283,6 +287,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
 
   _getTime({required bool startTime}) async {
     TimeOfDay? selectedTime = await showTimePicker(
+        initialEntryMode: TimePickerEntryMode.input,
         context: context,
         initialTime: startTime
             ? TimeOfDay.now()
