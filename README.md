@@ -1,6 +1,6 @@
 # todo_app
 
-A new Flutter project using GetX,sqflite.
+A Flutter project using GetX,sqflite.
 
 
 
